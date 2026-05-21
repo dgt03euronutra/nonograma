@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Nonograma</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<h1>Nonograma</h1>
+<p>Haz clic en las casillas</p>
+
+<div id="status" class="status">
+  <div id="lives" class="lives"></div>
+  <div id="message" class="message"></div>
+  <label for="board-size" class="board-size-label">Tamaño:</label>
+  <select id="board-size" class="board-size">
+    <option value="5">5</option>
+    <option value="10">10</option>
+    <option value="15">15</option>
+    <option value="20">20</option>
+  </select>
+  <label for="difficulty" class="difficulty-label">Dificultad:</label>
+  <select id="difficulty" class="difficulty">
+    <option value="0.4">Difícil 40%</option>
+    <option value="0.5">Medio 50%</option>
+    <option value="0.6">Fácil 60%</option>
+  </select>
+  <button id="new-game" class="new-game">Nueva partida</button>
+</div>
+
+<div class="nonogram">
+  <div class="corner"></div>
+  <div id="top-clues" class="top-clues"></div>
+  <div id="left-clues" class="left-clues"></div>
+  <div id="grid" class="grid"></div>
+</div>
+
+<script type="module" src="./app.js"></script>
+</body>
+</html>
